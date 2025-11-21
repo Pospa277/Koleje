@@ -1102,6 +1102,116 @@ section {
 }
 
 /* ===========================
+   Photo Gallery
+   =========================== */
+
+.photo-gallery {
+    background-color: var(--bg-white);
+    padding: 80px 0;
+}
+
+.photo-gallery.alt-bg {
+    background-color: var(--bg-light);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: var(--bg-white);
+    padding: 2rem 1.5rem 1rem;
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+.gallery-caption h4 {
+    color: var(--bg-white);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Hero with background image */
+.hero-with-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-with-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(184, 83, 45, 0.9) 0%, rgba(143, 63, 31, 0.85) 100%);
+}
+
+.hero-with-image .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-with-image .hero-logo {
+    color: var(--bg-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-with-image .hero-claim {
+    color: var(--bg-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-with-image .hero-description {
+    color: var(--bg-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
    Responzivita
    =========================== */
 
@@ -1281,6 +1391,17 @@ section {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .hero-with-image {
+        min-height: 500px;
+        padding: 80px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1318,5 +1439,13 @@ section {
 
     .claim-box {
         padding: 1.5rem;
+    }
+
+    .hero-with-image {
+        min-height: 400px;
+    }
+
+    .photo-gallery {
+        padding: 60px 0;
     }
 }
