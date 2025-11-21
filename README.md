@@ -106,14 +106,15 @@ Web je plně responzivní a přizpůsobí se:
 
 ### Domovská stránka (index.html)
 - Hero sekce s logem a claimem
-- Sekce "Co nabízíme" (3 pilíře)
+- Statistiky (1027 lůžek, 468 parkovacích míst, 18 000 m² rozsah)
 - Preview projektu
 - Kontaktní CTA
 
 ### O projektu (o-projektu.html)
 - Popis vize a mise
-- Tři pilíře projektu (Studuj, Žij, Zapoj se)
+- Informace o Olomouci jako univerzitním městě
 - Hodnoty projektu
+- **Poznámka:** Obsahuje placeholder obrázek radnice (`images/olomouc-radnice-placeholder.svg`), který je potřeba nahradit skutečnou fotografií
 
 ### Koleje (koleje.html)
 - Přehled všech kolejí
@@ -140,6 +141,7 @@ Web je plně responzivní a přizpůsobí se:
 
 ## 📝 Checklist pro další vývoj
 
+- [ ] **Nahradit placeholder Olomoucké radnice** (`images/olomouc-radnice-placeholder.svg`) skutečnou fotografií
 - [ ] Přidat skutečné obrázky kolejí
 - [ ] Implementovat funkční kontaktní formulář (backend)
 - [ ] Přidat Google Maps pro zobrazení lokace

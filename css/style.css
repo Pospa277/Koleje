@@ -571,6 +571,63 @@ section {
     line-height: 1.8;
 }
 
+/* Olomouc Highlight */
+.olomouc-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
+    align-items: start;
+}
+
+.olomouc-image {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.olomouc-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-gray) 100%);
+    min-height: 300px;
+}
+
+.olomouc-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.olomouc-features li {
+    padding: 1rem 0;
+    padding-left: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-gray);
+    line-height: 1.6;
+    position: relative;
+}
+
+.olomouc-features li:before {
+    content: "✓";
+    color: var(--primary-color);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    font-size: 1.25rem;
+}
+
+.olomouc-features li:last-child {
+    border-bottom: none;
+}
+
+.olomouc-features strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Sidebar */
 .content-sidebar {
     display: flex;
@@ -941,6 +998,12 @@ section {
 
     /* Content Grid */
     .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Olomouc Highlight */
+    .olomouc-highlight {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
