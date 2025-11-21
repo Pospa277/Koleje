@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradMap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D16942;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8532D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#E8E8E8"/>
+  <rect width="1200" height="800" fill="url(#gradMap)" opacity="0.1"/>
+
+  <!-- Placeholder text -->
+  <rect x="50" y="50" width="1100" height="700" fill="none" stroke="#B8532D" stroke-width="4" stroke-dasharray="10,5" rx="12"/>
+
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#B8532D" text-anchor="middle">Strategická mapa lokality</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="32" fill="#8F3F1F" text-anchor="middle">Placeholder pro mapu</text>
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">Nahraďte skutečnou mapou s vyznačením polohy 17square</text>
+</svg>
