@@ -36,124 +36,56 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Naše koleje</h1>
-            <p class="page-subtitle">Vyberte si kolej, která vyhovuje vašim potřebám</p>
+            <h1>Půdorys objektu</h1>
+            <p class="page-subtitle">Přehled jednotlivých zón kolejí 17square</p>
         </div>
     </section>
 
-    <!-- Přehled kolejí -->
+    <!-- Půdorys s legendou -->
     <section class="content-section">
         <div class="container">
-            <div class="dorms-grid">
-                <!-- Kolej 1 -->
-                <div class="dorm-card">
-                    <div class="dorm-image">17</div>
-                    <div class="dorm-content">
-                        <h3>Kolej Centrum</h3>
-                        <p>
-                            Naše hlavní kolej v centru města. Ideální pro studenty, kteří chtějí být
-                            v blízkosti všeho důležitého - fakult, knihoven i městského života.
-                        </p>
-                        <ul class="dorm-features">
-                            <li>Moderní pokoje pro 1-2 osoby</li>
-                            <li>Vysokorychlostní internet</li>
-                            <li>Společné studovny</li>
-                            <li>Fitness centrum</li>
-                            <li>Společenská místnost</li>
-                        </ul>
-                        <a href="kontakt.html" class="btn btn-primary">Máme zájem</a>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Levá strana - Fotka -->
+                <div style="width: 100%;">
+                    <img src="images/pudorys-koleje.jpg" alt="Půdorys kolejí 17square" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                </div>
+
+                <!-- Pravá strana - Legenda -->
+                <div style="padding: 2rem;">
+                    <h2 style="margin-bottom: 2rem; font-size: 2rem; color: var(--text-dark);">Legenda</h2>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <!-- Růžový puntík -->
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="width: 20px; height: 20px; background-color: #FF69B4; border-radius: 50%; display: inline-block; flex-shrink: 0;"></span>
+                            <span style="font-size: 1.1rem; color: var(--text-dark);">Ubytovací jednotky A</span>
+                        </div>
+
+                        <!-- Modrý puntík -->
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="width: 20px; height: 20px; background-color: #4169E1; border-radius: 50%; display: inline-block; flex-shrink: 0;"></span>
+                            <span style="font-size: 1.1rem; color: var(--text-dark);">Ubytovací jednotky B</span>
+                        </div>
+
+                        <!-- Žlutý puntík -->
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="width: 20px; height: 20px; background-color: #FFD700; border-radius: 50%; display: inline-block; flex-shrink: 0;"></span>
+                            <span style="font-size: 1.1rem; color: var(--text-dark);">Retail</span>
+                        </div>
+
+                        <!-- Zelený puntík -->
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="width: 20px; height: 20px; background-color: #32CD32; border-radius: 50%; display: inline-block; flex-shrink: 0;"></span>
+                            <span style="font-size: 1.1rem; color: var(--text-dark);">Komunitní prostory</span>
+                        </div>
+
+                        <!-- Šedý puntík -->
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span style="width: 20px; height: 20px; background-color: #808080; border-radius: 50%; display: inline-block; flex-shrink: 0;"></span>
+                            <span style="font-size: 1.1rem; color: var(--text-dark);">Technologie a sklady</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Kolej 2 -->
-                <div class="dorm-card">
-                    <div class="dorm-image">SQ</div>
-                    <div class="dorm-content">
-                        <h3>Kolej Park</h3>
-                        <p>
-                            Klidnější prostředí v blízkosti univerzitního parku. Perfektní
-                            pro ty, kteří hledají rovnováhu mezi studiem a odpočinkem v přírodě.
-                        </p>
-                        <ul class="dorm-features">
-                            <li>Pokoje s výhledem do parku</li>
-                            <li>Relaxační zóny</li>
-                            <li>Studijní místnosti</li>
-                            <li>Sportovní hřiště</li>
-                            <li>Kavárna a jídelna</li>
-                        </ul>
-                        <a href="kontakt.html" class="btn btn-primary">Máme zájem</a>
-                    </div>
-                </div>
-
-                <!-- Kolej 3 -->
-                <div class="dorm-card">
-                    <div class="dorm-image">17²</div>
-                    <div class="dorm-content">
-                        <h3>Kolej Kampus</h3>
-                        <p>
-                            Nejmladší kolej v areálu kampusu. Zaměřená na vytváření
-                            silné studentské komunity a společných aktivit.
-                        </p>
-                        <ul class="dorm-features">
-                            <li>Nové moderní vybavení</li>
-                            <li>Společné kuchyně</li>
-                            <li>Tvůrčí dílny a workshopy</li>
-                            <li>Hudební zkušebny</li>
-                            <li>Event prostor</li>
-                        </ul>
-                        <a href="kontakt.html" class="btn btn-primary">Máme zájem</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Porovnání kolejí -->
-    <section class="features" style="background-color: var(--bg-light);">
-        <div class="container">
-            <h2 class="section-title">Co všechny koleje nabízejí</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏠</div>
-                    <h3>Kvalitní ubytování</h3>
-                    <p>Moderně vybavené pokoje s veškerým potřebným zařízením pro pohodlný život během studia.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌐</div>
-                    <h3>Vysokorychlostní internet</h3>
-                    <p>Rychlé a stabilní připojení k internetu ve všech pokojích i společných prostorách.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Bezpečnost 24/7</h3>
-                    <p>Zabezpečený vstup, kamerový systém a nepřetržitá recepce pro vaši bezpečnost.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧹</div>
-                    <h3>Údržba a čistota</h3>
-                    <p>Pravidelný úklid společných prostor a rychlá údržba v případě potřeby.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Studentské akce</h3>
-                    <p>Pravidelné společenské, sportovní a vzdělávací akce pro všechny rezidenty.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚌</div>
-                    <h3>Skvělá dostupnost</h3>
-                    <p>Výborné dopravní spojení na fakulty i do centra města.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA sekce -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Zajímá vás některá z našich kolejí?</h2>
-                <p>Kontaktujte nás a rádi vám poskytneme více informací nebo vás provedeme kolejemi.</p>
-                <a href="kontakt.html" class="btn btn-primary">Kontaktovat nás</a>
             </div>
         </div>
     </section>
